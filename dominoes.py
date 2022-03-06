@@ -77,8 +77,6 @@ def player_move():
                     if len(stock_pieces) > 0:
                         player_pieces.append(stock_pieces.pop())
                         break
-                    else:
-                        print("The stock is empty, play a piece from your hand!")
             else:
                 print("Invalid input. Please try again.")
         else:
@@ -116,8 +114,6 @@ def computer_move():
             if len(computer_count) == 0:
                 if len(stock_pieces) > 0:
                     computer_pieces.append(stock_pieces.pop())
-                else:
-                    status = "Draw"
             break
         else:
             print("Invalid input. Please try again.")
