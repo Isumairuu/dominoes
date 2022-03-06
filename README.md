@@ -2,6 +2,20 @@
 
 Implementation of Jetbrains Academy project Dominoes
 
+## Run
+
+```commandline
+python dominoes.py
+```
+
+Or if you have both python2 & python3
+
+```commandline
+python3 dominoes.py
+```
+
+Python version:`Python 3.9.9`
+
 ## Game Rules
 
 As you might know, a domino is a playing piece that is characterized by the two numbers written on it. The numbers are
@@ -68,7 +82,7 @@ contains a 2. If we were to place the domino on the right side of the snake, we 
 it: `[3,4],[4,4],[4,2]
 ,[2,1]`.
 
-### AI
+## AI
 
 The primary objective of the AI is to determine which domino is the least favorable and then get rid of it. To reduce
 your chances of skipping a turn, one must increase the diversity of their pieces. For example, it's unwise to play the
@@ -87,7 +101,7 @@ The AI uses the following algorithm to calculate the score:
     prohibit this move, the AI will move down the score list and try 
     another domino. The AI will skip the turn if it runs out of options.
 
-### Examples
+## Examples
 
 The greater-than symbol followed by a space (> ) represents the user input. Note that it's not part of the input.
 
